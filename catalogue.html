@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalogue</title>
+     <!--fontawesome cdn--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootstrap css--> 
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel = "stylesheet" href = "css/style.css">
+
+
+</head>
+<body>
+    <!--la barre de navigation -->
+    <div class="fixed-top">
+        <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 d-flex">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src = "img/logo.png" alt = "site icon">
+                    <span class = "text-uppercase fw-lighter ms-2">AGORA FRANCIA</span>
+                </a>
+    
+                <div class = "order-lg-2 nav-btns d-flex">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type = "button" class = "btn position-relative">
+                            <i class = "fa fa-search"></i>
+                            <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span-->
+                        </button>
+                    </form>
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-bell"></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-heart"></i>
+                        <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span-->
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <a href="panier.html"><i class = "fa fa-shopping-cart"></i></a>
+                    </button>
+                </div>
+                
+                    <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span-->
+                <div class = "order-lg-2 nav-btns">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="login.html">Sign in</a></button>
+                </div>
+            </div>
+        </nav> 
+         <!--end of upper navbar--> 
+
+        <!--bottom navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">ACCEUIL</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "catalogue.html">PRODUITS</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "vendre.html">VENDRE</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "about.html">A PROPOS</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>  
+
+    <header class="bannerProduit">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "bannerProduit-content">
+                    <h2 class = "mt-2 mb-4 text-white">PRODUITS</h2>
+                    <p class="text-white">Pièces de créateurs et essentiels vintage : découvrez toute la mode, 
+                        <br>la joaillerie, et le linge de maison aux enchères.</p>
+                    <a href = "#" class = "btn">Acheter maintenant</a>
+                </div>
+            </div>
+        </div>
+		
+	</header>
+    <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class="container text-center mt-5 py-5">
+                <h3>Nos coups de coeur</h3>
+                <hr class="mx-auto">   
+            </div>
+
+    </section>
+    <section class="page-catalogue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 blog-form">
+                    <h2 class="blog-sidebar-title"><b>Categories</b></h2>
+					<hr />
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Bijoux</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Meubles</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">Oeuvres d'art</button>
+
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<h2 class="blog-sidebar-title"><b>Filter</b></h2>
+					<hr />
+                    <div id="fs_price_body">
+                        <div>
+                            <span class="heading">
+                                Prix
+                            </span>
+                            <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                                <button type = "button" class = "btn m-2 text-dark active-filter-btn">Moins de 50$</button>
+                                <button type = "button" class = "btn m-2 text-dark">De 50$ à 100$</button>
+                                <button type = "button" class = "btn m-2 text-dark" >Plus de 100$</button>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="fs_price_body">
+                        <div>
+                            <span class="heading">
+                                Type d'achat
+                            </span>
+                            <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                                <button type = "button" class = "btn m-2 text-dark active-filter-btn">Encheres</button>
+                                <button type = "button" class = "btn m-2 text-dark">Negoce</button>
+                                <button type = "button" class = "btn m-2 text-dark" >Achat immédiat</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--END  <div class="col-lg-3 blog-form">-->
+                <div class="col-lg-9" style="padding-left: 30px;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="img/itemCar1.jpg" class="product-image">
+                                <h5 class="card-title"><b>Accessories</b></h5>
+                                <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="tags">Price $14.16</p>
+                                <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="img/itemCar1.jpg" class="product-image">
+                                <h5 class="card-title"><b>Accessories</b></h5>
+                                <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="tags">Price $14.16</p>
+                                <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="img/itemCar1.jpg" class="product-image">
+                                <h5 class="card-title"><b>Accessories</b></h5>
+                                <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                <p class="tags">Price $14.16</p>
+                                <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+					<div>&nbsp;</div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="img/itemCar1.jpg" class="product-image">
+                                    <h5 class="card-title"><b>Accessories</b></h5>
+                                    <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="tags">Price $14.16</p>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="img/itemCar1.jpg" class="product-image">
+                                    <h5 class="card-title"><b>Accessories</b></h5>
+                                    <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="tags">Price $14.16</p>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="img/itemCar1.jpg" class="product-image">
+                                    <h5 class="card-title"><b>Accessories</b></h5>
+                                    <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="tags">Price $14.16</p>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>&nbsp;</div>
+					<div>&nbsp;</div>
+                    <div class="row">
+                        <div class=" col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="img/itemCar1.jpg" class="product-image">
+                                    <h5 class="card-title"><b>Accessories</b></h5>
+                                    <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="tags">Price $14.16</p>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="img/itemCar1.jpg" class="product-image">
+                                    <h5 class="card-title"><b>Accessories</b></h5>
+                                    <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="tags">Price $14.16</p>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="img/itemCar1.jpg" class="product-image">
+                                    <h5 class="card-title"><b>Accessories</b></h5>
+                                    <p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="tags">Price $14.16</p>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Acheter</a>
+                                    <a href="#" class="btn btn-primary mt-3"><i class="fa fa-phone" aria-hidden="true"></i> Negocier</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+
+    </section>
+    <div>&nbsp;</div>
+	<div>&nbsp;</div>
+	<div>&nbsp;</div>
+
+			<!--END  <div class="col-lg-3 blog-form">-->
+
+    <!--le footer -->
+    <footer class="bg-secondary py-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="text-white">Suivez Agora Francia sur les réseaux sociaux</h2>
+                    <div class="py-2">
+                        <a href="#"><i class="fab fa-facebook fa-2X text-dark me-4 "></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2X text-dark me-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2X text-dark me-4"></i></a>
+                        <a href="#"><i class="fab fa-pinterest fa-2X text-dark me-4"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2X text-dark me-4"></i></a>
+                    </div>
+                    <p class="text-white justify-content-between">ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! 
+                        Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                    </div>
+                    <div class="text-center">
+                        <a class="text-dark px-2 py-2" href="#">ACCUEIL</a>
+                        <a class="text-dark px-2 py-2" href="#">PRODUITS</a>
+                        <a class="text-dark px-2 py-2" href="#">VENDRE</a>
+                        <a class="text-dark px-2 py-2" href="#">CONTACT</a>
+                        <a class="text-dark px-2 py-2" href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
+                        <a class="text-dark px-2 py-2" href="#">CONDITIONS D'UTILISATION</a>
+                    </div>
+                    <p class="text-light justify-content-center py-2 m-0">&copy;Copyright 2023 - by Agora Francia</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     <!--fontawesome cdn--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootstrap css--> 
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+
+      <!--upper navbar--> 
+     <div class="fixed-top">
+        <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 d-flex">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src = "img/logo.png" alt = "site icon">
+                    <span class = "text-uppercase fw-lighter ms-2">AGORA FRANCIA</span>
+                </a>
+    
+                <div class = "order-lg-2 nav-btns d-flex">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type = "button" class = "btn position-relative">
+                            <i class = "fa fa-search"></i>
+                            <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span-->
+                        </button>
+                    </form>
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-bell"></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-heart"></i>
+                        <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span-->
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <a href="panier.html"><i class = "fa fa-shopping-cart"></i></a>
+                    </button>
+                </div>
+                
+                    <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span-->
+                <div class = "order-lg-2 nav-btns">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="login.html">Sign in</a></button>
+                </div>
+            </div>
+        </nav> 
+         <!--end of upper navbar--> 
+
+        <!--bottom navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">ACCEUIL</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "catalogue.html">PRODUITS</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "vendre.html">VENDRE</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "about.html">A PROPOS</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "contact.html">CONTACT</a>
+                </li>
+            </ul>
+          </nav>
+
+        </div> 
+     
+    <!--end of bottom navbar--> 
+
+    <!--mets le corps de ta page ici --> 
+    
+    <!--Banière principale-->
+    <header id="header" class="vh-100 bg-dark " style="padding-top: 104px;">
+        <div class="container h-100 align-items-center text-center">
+            <div class="text-center mt-5">
+                <h1 class="text-uppercase py-2 fw-bold text-white">le site de magasinage<br> prefere des francais</h1>
+                <h3 class="text-white justify-content-between">
+                    Découvrez de nouveaux tableaux, des oeuvres d'art
+                    pour le plus grand plaisir des collectioneurs
+                </h3>
+                <button>Voir Plus</button>
+            </div>
+
+        </div>
+
+    </header>
+    <section id="brand" class="container py-5 pb-5">
+        <div class="row m-0 py-5 justify-content-between">
+            <img class="img-fluid col-4" src="img/brand1.png" alt="">
+            <img class="img-fluid col-4" src="img/brand2.png" alt="">
+            <img class="img-fluid col-4" src="img/brand3.png" alt="">
+        </div>
+    </section>
+    <section id="Catégories" class="py-5 pb-5" >
+        <div class="container text-center mt-5 py-5">
+            <h3>Catégories</h3>
+            <hr class="mx-auto">
+            <p>Nous vous proposons la sélection des articles du moment </p>
+
+        </div>
+        <div class="row">
+            <div class = "special-list row g-0">
+                <div class = "col-lg-4 col-md-12 col-12 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "img/trésor.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <h2 class = "text-capitalize mt-3 mb-1">Trésor exceptionnels</h2>
+                        <a href = "#" class = "btn btn-primary mt-3">Découvrir</a>
+                    </div>
+                </div>
+                <div class = "col-lg-4 col-md-12 col-12 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "img/objetSeconmain.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <h2 class = "text-capitalize mt-3 mb-1">Aricles seconde main</h2>
+                        <a href = "#" class = "btn btn-primary mt-3">Découvrir</a>
+                    </div>
+                </div>
+                <div class = "col-lg-4 col-md-12 col-12 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "img/quotidien.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <h2 class = "text-capitalize mt-3 mb-1">Objets du quotidien</h2>
+                        <a href = "#" class = "btn btn-primary mt-3">Découvrir</a>
+                    </div>
+                </div>
+
+        </div>
+
+    </section>
+
+    <section id="les plus vendus" class="py-5 pb-5" >
+        <div class="container text-center mt-5 py-5">
+            <h3>les plus vendus</h3>
+            <hr class="mx-auto">
+            <p>Nous vous proposons la sélection des articles du moment </p>
+
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="produits text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid " src="img/la bible.jpg" alt="">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">bible orthodoxe"></h5>
+                <h4 class="p-price">1500$</h4>
+                <button class="buy-btn">Acheter mainteant</button>
+
+            </div>
+            <div class="produits text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid" src="img/stylo lvmh.jpg" alt="">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Stylo LVH"></h5>
+                <h4 class="p-price">550$</h4>
+                <button class="buy-btn">Acheter mainteant</button>
+
+            </div>
+            <div class="produits text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid" src="img/machine à écrire.jpg" alt="">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Machine à écrire Voltaire"></h5>
+                <h4 class="p-price">850$</h4>
+                <button class="buy-btn">Acheter mainteant</button>
+
+            </div>
+            <div class="produits text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid" src="img/reveil b.jpg" alt="">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="p-name">Reveil bulgari"></h5>
+                <h4 class="p-price">1000$</h4>
+                <button class="buy-btn">Acheter mainteant</button>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="les enchères en cours" class="py-5 pb-5" >
+       <div class="container text-center mt-5 py-5">
+            <h3>enchères en cours</h3>
+            <hr class="mx-auto">
+            <p>Nous vous proposons la sélection des articles du moment </p>
+
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                    <div class="card">
+                      <img src="img/itemCar1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">enchérir</a>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="img/itemCar2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Encherir</a>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="img/itemCar3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Enchérir</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <img src="img/itemCar4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Enchérir</a>
+                        </div>
+                      </div>
+                      <div class="card d-none d-md-block">
+                        <img src="img/itemCar5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Enchérir</a>
+                        </div>
+                      </div>
+                      <div class="card d-none d-md-block">
+                        <img src="img/itemCar6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Enchérir</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <img src="img/itemCar7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Enchérir</a>
+                        </div>
+                      </div>
+                      <div class="card d-none d-md-block">
+                        <img src="img/itemCar8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Enchérir</a>
+                        </div>
+                      </div>
+                      <div class="card d-none d-md-block">
+                        <img src="img/itemCar9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Enchérir</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </section>
+    <section id = "bannerUs" class = " bg-dark py-5 pb-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "bannerUs-content">
+                    <h2 class = "mt-2 mb-4 text-white">Qu'attendez vous pour nous rejoindre</h2>
+                    <p class="text-white">Agora c'est avant tout une communauté de vendeurs dynamiques et solidaires.<br>
+                        Tu veux intégrer cette communauté, c'est trés simple</p>
+                    <a href = "#" class = "btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "histoire" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">Notre Histoire</h2>
+                    </div>
+                    <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis,
+                        modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "img/NotreHistoire.jpg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Le footer-->
+    <footer class="bg-secondary py-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="text-white">Suivez Agora Francia sur les réseaux sociaux</h2>
+                    <div class="py-2">
+                        <a href="#"><i class="fab fa-facebook fa-2X text-dark me-4 "></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2X text-dark me-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2X text-dark me-4"></i></a>
+                        <a href="#"><i class="fab fa-pinterest fa-2X text-dark me-4"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2X text-dark me-4"></i></a>
+                    </div>
+                    <p class="text-white justify-content-between">ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! 
+                        Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                    </div>
+                    <div class="text-center">
+                        <a class="text-dark px-2 py-2" href="#">ACCUEIL</a>
+                        <a class="text-dark px-2 py-2" href="#">PRODUITS</a>
+                        <a class="text-dark px-2 py-2" href="#">VENDRE</a>
+                        <a class="text-dark px-2 py-2" href="#">CONTACT</a>
+                        <a class="text-dark px-2 py-2" href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
+                        <a class="text-dark px-2 py-2" href="#">CONDITIONS D'UTILISATION</a>
+                    </div>
+                    <p class="text-light justify-content-center py-2 m-0">&copy;Copyright 2023 - by Agora Francia</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+    
+    
+ 
+    <!-- pense à y inserer un header  -->
+
+
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>

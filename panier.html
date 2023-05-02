@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le panier</title>
+    <!--fontawesome cdn--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootstrap css--> 
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <div class="fixed-top">
+        <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 d-flex">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src = "img/logo.png" alt = "site icon">
+                    <span class = "text-uppercase fw-lighter ms-2">AGORA FRANCIA</span>
+                </a>
+    
+                <div class = "order-lg-2 nav-btns d-flex">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type = "button" class = "btn position-relative">
+                            <i class = "fa fa-search"></i>
+                            <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span-->
+                        </button>
+                    </form>
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-bell"></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-heart"></i>
+                        <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span-->
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <a href="panier.html"><i class = "fa fa-shopping-cart"></i></a>
+                    </button>
+                </div>
+                
+                    <!--span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span-->
+                <div class = "order-lg-2 nav-btns">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="login.html">Sign in</a></button>
+                </div>
+            </div>
+        </nav> 
+         <!--end of upper navbar--> 
+
+        <!--bottom navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">ACCEUIL</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "catalogue.html">PRODUITS</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "vendre.html">VENDRE</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "about.html">A PROPOS</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div> 
+    
+    <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class="container text-center mt-5 py-5">
+                <h3>Panier</h3>
+                <hr class="mx-auto">   
+            </div>
+
+    </section>
+    <section id="cart-container" class="container my-5">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Retirer</td>
+                    <td>Image</td>
+                    <td>Produit</td>
+                    <td>Prix</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                    <td><img src="img/bague elisabeth2.jpg" alt=""></td>
+                    <td>
+                        <h5>bague elisabeth</h5>
+                    </td>
+                    <td>
+                        <h5>1200$</h5>
+                    </td>
+                    <td>1200$</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                    <td><img src="img/machine à écrire.jpg" alt=""></td>
+                    <td>
+                        <h5>portrait monalisa</h5>
+                    </td>
+                    <td>
+                        <h5>1200$</h5>
+                    </td>
+                    <td>1200$</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                    <td><img src="img/la bible.jpg" alt=""></td>
+                    <td>
+                        <h5>livre voltaire</h5>
+                    </td>
+                    <td>
+                        <h5>1200$</h5>
+                    </td>
+                    <td>1200$</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>Coupon</h5>
+                    <p>Entrer le code promo</p>
+                    <input type="text" placeholder="Code">
+                    <button class="btn btn-lg btn-dark btn-block">Aplliquez</button>
+                </div>
+            </div>
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>Cart total</h5>
+                    <div class="d-flex justify-content-between">
+                        <h6>Total hors taxe</h6>
+                        <p>1200$</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Reduction</h6>
+                        <p>200$</p>
+                    </div>
+                    <hr class="second-hr">
+                    <div class="d-flex justify-content-between">
+                        <h6>Total</h6>
+                        <p>1000$</p>
+                    </div>
+                    <button class="btn btn-lg btn-dark btn-block ml-auto">Paiement</button>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="bg-secondary py-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="text-white">Suivez Agora Francia sur les réseaux sociaux</h2>
+                        <div class="py-2">
+                            <a href="#"><i class="fab fa-facebook fa-2X text-dark me-4 "></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2X text-dark me-4"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2X text-dark me-4"></i></a>
+                            <a href="#"><i class="fab fa-pinterest fa-2X text-dark me-4"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2X text-dark me-4"></i></a>
+                        </div>
+                        <p class="text-white justify-content-between">ipsum dolor sit amet consectetur adipisicing elit. 
+                            Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! 
+                            Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="text-dark px-2 py-2" href="#">ACCUEIL</a>
+                            <a class="text-dark px-2 py-2" href="#">PRODUITS</a>
+                            <a class="text-dark px-2 py-2" href="#">VENDRE</a>
+                            <a class="text-dark px-2 py-2" href="#">CONTACT</a>
+                            <a class="text-dark px-2 py-2" href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
+                            <a class="text-dark px-2 py-2" href="#">CONDITIONS D'UTILISATION</a>
+                        </div>
+                        <p class="text-light justify-content-center py-2 m-0">&copy;Copyright 2023 - by Agora Francia</p>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    </footer>
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>
